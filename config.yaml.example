@@ -1,0 +1,30 @@
+# Telegram API配置
+api_id: YOUR_API_ID  # 从 https://my.telegram.org 获取
+api_hash: "YOUR_API_HASH"  # 从 https://my.telegram.org 获取
+phone: "+1234567890"  # 用于登录的电话号码
+
+# 交易机器人配置
+bot_username: "trading_bot_username"  # 交易机器人的用户名
+bot_chat_id: 0  # 交易机器人的聊天ID（可选）
+
+# 钱包配置
+wallet_address: "0x1234567890abcdef1234567890abcdef12345678"  # 用于交易的钱包地址，用于验证代币余额
+
+# 交易参数
+buy_amount: "0.01"  # 买入金额（单位：BNB）
+target_gain_percent: 50  # 止盈百分比，达到后自动卖出
+stop_loss_percent: 10  # 止损百分比，达到后自动卖出
+
+# 系统参数
+price_check_interval: 30  # 检查价格的间隔（秒）
+buy_confirmation_delay: 3  # 买入后等待确认的时间（秒）
+
+# 授权用户ID列表，只有这些用户可以发送合约地址
+authorized_users:  # 用户ID可以通过 @userinfobot 获取
+  - 123456789
+  - 987654321
+
+# BSCScan API密钥，用于验证合约地址
+# 强烈建议设置此项，否则可能无法正确验证某些合约地址
+# 特别是新发布或尚未在DEX上有交易对的合约
+bscscan_api_key: "YOUR_BSCSCAN_API_KEY"  # 从 https://bscscan.com/myapikey 获取 
