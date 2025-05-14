@@ -19,7 +19,7 @@
 
 - Python 3.7+
 - Telethon
-- Requests
+- Aiohttp
 
 ## 安装步骤
 
