@@ -63,7 +63,7 @@ stop_loss_percent: 10  # 止损百分比，达到后自动卖出
 price_check_interval: 30  # 检查价格的间隔（秒）
 buy_confirmation_delay: 5  # 买入后等待确认的时间（秒）
 
-# 授权用户ID列表，只有这些用户可以使用机器人
+# 授权用户ID列表，只接受以下用户的ca输入
 authorized_users:  # 用户ID可以通过 @userinfobot 获取
   - 123456789
   - 987654321
